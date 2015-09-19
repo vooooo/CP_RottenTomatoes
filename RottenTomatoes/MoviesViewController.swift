@@ -16,7 +16,30 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchMovies()
         
+//        let url = NSURL(string: "https://gist.githubusercontent.com/timothy1ee/d1778ca5b944ed974db0/raw/489d812c7ceeec0ac15ab77bf7c47849f2d1eb2b/gistfile1.json")!
+//        let request = NSURLRequest(URL: url)
+//        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response, data, error) -> Void in
+//            if let json = data {
+//                let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(json, options: []) as! NSDictionary
+//                self.movies = responseDictionary["movies"] as? [NSDictionary]
+//                self.tableView.reloadData()
+//                
+//                NSLog("response: \(self.movies)")
+//            } else {
+//                if let e = error {
+//                    NSLog("Error: \(e)")
+//                }
+//            }
+//        }
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
+
+    func fetchMovies() {
+        MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+    
         let url = NSURL(string: "https://gist.githubusercontent.com/timothy1ee/d1778ca5b944ed974db0/raw/489d812c7ceeec0ac15ab77bf7c47849f2d1eb2b/gistfile1.json")!
         let request = NSURLRequest(URL: url)
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response, data, error) -> Void in
@@ -24,16 +47,18 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                 let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(json, options: []) as! NSDictionary
                 self.movies = responseDictionary["movies"] as? [NSDictionary]
                 self.tableView.reloadData()
+                sleep(2)
                 
                 NSLog("response: \(self.movies)")
+                MBProgressHUD.hideHUDForView(self.view, animated: true)
+
             } else {
                 if let e = error {
                     NSLog("Error: \(e)")
                 }
             }
         }
-        tableView.dataSource = self
-        tableView.delegate = self
+
     }
 
     override func didReceiveMemoryWarning() {
