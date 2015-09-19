@@ -14,6 +14,7 @@
 		97B5358E1BABE0A100FACA58 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B5358D1BABE0A100FACA58 /* MovieCell.swift */; settings = {ASSET_TAGS = (); }; };
 		97B535921BABE84F00FACA58 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B535911BABE84F00FACA58 /* MoviesViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		97B535971BABEEA400FACA58 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B535961BABEEA400FACA58 /* MovieDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		97D6828E1BAE116500EA48E4 /* ErrorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D6828D1BAE116500EA48E4 /* ErrorViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		B26418826F15E54D36EBE73E /* libPods-RottenTomatoes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BF30F3284DF52DEABB5F10 /* libPods-RottenTomatoes.a */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		97B535911BABE84F00FACA58 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		97B535931BABEB6F00FACA58 /* RottenTomatoes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RottenTomatoes-Bridging-Header.h"; sourceTree = "<group>"; };
 		97B535961BABEEA400FACA58 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		97D6828D1BAE116500EA48E4 /* ErrorViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewCell.swift; sourceTree = "<group>"; };
 		A28ADAA571B85500CDAD6216 /* Pods-RottenTomatoes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RottenTomatoes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RottenTomatoes/Pods-RottenTomatoes.debug.xcconfig"; sourceTree = "<group>"; };
 		EBB5C677113C9E925AA56D40 /* Pods-RottenTomatoes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RottenTomatoes.release.xcconfig"; path = "Pods/Target Support Files/Pods-RottenTomatoes/Pods-RottenTomatoes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				97B5358D1BABE0A100FACA58 /* MovieCell.swift */,
+				97D6828D1BAE116500EA48E4 /* ErrorViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97B535971BABEEA400FACA58 /* MovieDetailViewController.swift in Sources */,
+				97D6828E1BAE116500EA48E4 /* ErrorViewCell.swift in Sources */,
 				97B535781BABD87E00FACA58 /* AppDelegate.swift in Sources */,
 				97B5358E1BABE0A100FACA58 /* MovieCell.swift in Sources */,
 				97B535921BABE84F00FACA58 /* MoviesViewController.swift in Sources */,
