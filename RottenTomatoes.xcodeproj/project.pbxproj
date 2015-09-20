@@ -15,6 +15,12 @@
 		97B535921BABE84F00FACA58 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B535911BABE84F00FACA58 /* MoviesViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		97B535971BABEEA400FACA58 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B535961BABEEA400FACA58 /* MovieDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		97D6828E1BAE116500EA48E4 /* ErrorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D6828D1BAE116500EA48E4 /* ErrorViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		97D682901BAE1F2700EA48E4 /* DvdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D6828F1BAE1F2700EA48E4 /* DvdsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		97D682941BAE213D00EA48E4 /* DvdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D682931BAE213D00EA48E4 /* DvdCell.swift */; settings = {ASSET_TAGS = (); }; };
+		97D6829C1BAF71A800EA48E4 /* disc-icon-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 97D6829A1BAF71A800EA48E4 /* disc-icon-48.png */; settings = {ASSET_TAGS = (); }; };
+		97D6829D1BAF71A800EA48E4 /* movies-icon-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 97D6829B1BAF71A800EA48E4 /* movies-icon-48.png */; settings = {ASSET_TAGS = (); }; };
+		97D682A01BAF724800EA48E4 /* movies-icon-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 97D6829E1BAF724800EA48E4 /* movies-icon-24.png */; settings = {ASSET_TAGS = (); }; };
+		97D682A11BAF724800EA48E4 /* disc-icon-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 97D6829F1BAF724800EA48E4 /* disc-icon-24.png */; settings = {ASSET_TAGS = (); }; };
 		B26418826F15E54D36EBE73E /* libPods-RottenTomatoes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BF30F3284DF52DEABB5F10 /* libPods-RottenTomatoes.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +37,12 @@
 		97B535931BABEB6F00FACA58 /* RottenTomatoes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RottenTomatoes-Bridging-Header.h"; sourceTree = "<group>"; };
 		97B535961BABEEA400FACA58 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		97D6828D1BAE116500EA48E4 /* ErrorViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewCell.swift; sourceTree = "<group>"; };
+		97D6828F1BAE1F2700EA48E4 /* DvdsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DvdsViewController.swift; sourceTree = "<group>"; };
+		97D682931BAE213D00EA48E4 /* DvdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DvdCell.swift; sourceTree = "<group>"; };
+		97D6829A1BAF71A800EA48E4 /* disc-icon-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disc-icon-48.png"; sourceTree = "<group>"; };
+		97D6829B1BAF71A800EA48E4 /* movies-icon-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movies-icon-48.png"; sourceTree = "<group>"; };
+		97D6829E1BAF724800EA48E4 /* movies-icon-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movies-icon-24.png"; sourceTree = "<group>"; };
+		97D6829F1BAF724800EA48E4 /* disc-icon-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "disc-icon-24.png"; sourceTree = "<group>"; };
 		A28ADAA571B85500CDAD6216 /* Pods-RottenTomatoes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RottenTomatoes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RottenTomatoes/Pods-RottenTomatoes.debug.xcconfig"; sourceTree = "<group>"; };
 		EBB5C677113C9E925AA56D40 /* Pods-RottenTomatoes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RottenTomatoes.release.xcconfig"; path = "Pods/Target Support Files/Pods-RottenTomatoes/Pods-RottenTomatoes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +89,7 @@
 		97B535761BABD87E00FACA58 /* RottenTomatoes */ = {
 			isa = PBXGroup;
 			children = (
+				97D682951BAF714700EA48E4 /* Images */,
 				97B5358C1BABE06F00FACA58 /* Views */,
 				97B5358B1BABD92700FACA58 /* View Controllers */,
 				97B535771BABD87E00FACA58 /* AppDelegate.swift */,
@@ -94,6 +107,7 @@
 			children = (
 				97B535911BABE84F00FACA58 /* MoviesViewController.swift */,
 				97B535961BABEEA400FACA58 /* MovieDetailViewController.swift */,
+				97D6828F1BAE1F2700EA48E4 /* DvdsViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -102,9 +116,21 @@
 			isa = PBXGroup;
 			children = (
 				97B5358D1BABE0A100FACA58 /* MovieCell.swift */,
+				97D682931BAE213D00EA48E4 /* DvdCell.swift */,
 				97D6828D1BAE116500EA48E4 /* ErrorViewCell.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		97D682951BAF714700EA48E4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				97D6829E1BAF724800EA48E4 /* movies-icon-24.png */,
+				97D6829F1BAF724800EA48E4 /* disc-icon-24.png */,
+				97D6829A1BAF71A800EA48E4 /* disc-icon-48.png */,
+				97D6829B1BAF71A800EA48E4 /* movies-icon-48.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		CC00C88F146EF44D0A533F5D /* Frameworks */ = {
@@ -175,7 +201,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97D682A11BAF724800EA48E4 /* disc-icon-24.png in Resources */,
 				97B535821BABD87E00FACA58 /* LaunchScreen.storyboard in Resources */,
+				97D6829C1BAF71A800EA48E4 /* disc-icon-48.png in Resources */,
+				97D6829D1BAF71A800EA48E4 /* movies-icon-48.png in Resources */,
+				97D682A01BAF724800EA48E4 /* movies-icon-24.png in Resources */,
 				97B5357F1BABD87E00FACA58 /* Assets.xcassets in Resources */,
 				97B5357D1BABD87E00FACA58 /* Main.storyboard in Resources */,
 			);
@@ -222,10 +252,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				97B535971BABEEA400FACA58 /* MovieDetailViewController.swift in Sources */,
+				97D682901BAE1F2700EA48E4 /* DvdsViewController.swift in Sources */,
 				97D6828E1BAE116500EA48E4 /* ErrorViewCell.swift in Sources */,
 				97B535781BABD87E00FACA58 /* AppDelegate.swift in Sources */,
 				97B5358E1BABE0A100FACA58 /* MovieCell.swift in Sources */,
 				97B535921BABE84F00FACA58 /* MoviesViewController.swift in Sources */,
+				97D682941BAE213D00EA48E4 /* DvdCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
