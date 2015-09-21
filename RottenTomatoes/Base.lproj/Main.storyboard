@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--Movies-->
+        <!--Box Office-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MoviesViewController" customModule="RottenTomatoes" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,8 +16,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="kPA-c3-wxp">
+                                    <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
                                 <view key="tableFooterView" hidden="YES" contentMode="scaleToFill" id="ejQ-xz-gHC" customClass="ErrorViewCell" customModule="RottenTomatoes" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="222" width="320" height="44"/>
+                                    <rect key="frame" x="0.0" y="470" width="320" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1wv-Lz-0eX">
@@ -32,7 +37,7 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoviesCell" rowHeight="130" id="eNN-Cm-psz" customClass="MovieCell" customModule="RottenTomatoes" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="130"/>
+                                        <rect key="frame" x="0.0" y="136" width="320" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.90000000000000002" contentMode="center" tableViewCell="eNN-Cm-psz" id="KOu-Ka-R1f">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
@@ -72,9 +77,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Movies" image="movies-icon-48.png" id="CtH-ij-7JL"/>
-                    <navigationItem key="navigationItem" title="Movies" id="Msz-Iq-ngN"/>
+                    <navigationItem key="navigationItem" title="Box Office" id="Msz-Iq-ngN"/>
                     <connections>
                         <outlet property="errorCell" destination="ejQ-xz-gHC" id="K27-QP-P1l"/>
+                        <outlet property="searchBar" destination="kPA-c3-wxp" id="Dmg-vL-2ev"/>
                         <outlet property="tableView" destination="spb-zG-BVW" id="65u-BX-yux"/>
                     </connections>
                 </viewController>
@@ -82,7 +88,7 @@
             </objects>
             <point key="canvasLocation" x="1213" y="200"/>
         </scene>
-        <!--DVDs-->
+        <!--DVD-->
         <scene sceneID="dTB-Lk-HAe">
             <objects>
                 <viewController id="aN9-fK-wgL" customClass="DvdsViewController" customModule="RottenTomatoes" customModuleProvider="target" sceneMemberID="viewController">
@@ -135,7 +141,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="DVDs" id="PPT-j3-V0M"/>
+                    <navigationItem key="navigationItem" title="DVD" id="PPT-j3-V0M"/>
                     <connections>
                         <outlet property="tableView" destination="thp-TN-SxK" id="bLa-KF-FXU"/>
                     </connections>
@@ -153,7 +159,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="yo8-Xe-oUi">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="63" width="320" height="455"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <view alpha="0.80000000000000004" contentMode="scaleToFill" id="Vgc-zR-BPD">
@@ -161,14 +167,14 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DJI-fH-Y4e">
-                                        <rect key="frame" x="21" y="48" width="279" height="117"/>
+                                        <rect key="frame" x="21" y="36" width="279" height="95"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Czj-Cc-ojM">
-                                        <rect key="frame" x="20" y="20" width="280" height="21"/>
+                                        <rect key="frame" x="20" y="7" width="280" height="21"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -200,7 +206,7 @@
         <scene sceneID="U7U-BI-jp9">
             <objects>
                 <navigationController title="Movies" automaticallyAdjustsScrollViewInsets="NO" id="D1l-58-ahO" userLabel="MOvies" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Movies" image="movies-icon-24.png" id="8PE-Y0-tWa"/>
+                    <tabBarItem key="tabBarItem" title="Box Office" image="movies-icon-24.png" id="8PE-Y0-tWa"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iyF-DR-D01">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -233,11 +239,11 @@
             </objects>
             <point key="canvasLocation" x="289" y="511"/>
         </scene>
-        <!--DVDs-->
+        <!--DVD-->
         <scene sceneID="G5B-de-G5H">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kAc-Gs-Ela" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="DVDs" image="disc-icon-24.png" id="1vU-Ry-8PV"/>
+                    <tabBarItem key="tabBarItem" title="DVD" image="disc-icon-24.png" id="1vU-Ry-8PV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="00S-la-IEn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -259,6 +265,6 @@
         <image name="movies-icon-48.png" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cB9-7r-Sc2"/>
+        <segue reference="jTd-Ho-pTU"/>
     </inferredMetricsTieBreakers>
 </document>
